@@ -1,0 +1,29 @@
+Entering initializeCNDConstants
+Entering initializeCTOF
+  > Data loaded in translation table dcTT
+
+
+
+
+   ## output ## 
+
+    Usage: -Option=<option>
+
+   > ALLRAWS: Activates step-by-step output for system(s). Example: -ALLRAWS="DC, TOF"
+   > ELECTRONICNOISE: Activates electronic noise routines for system(s). Example: -ELECTRONICNOISE="dc, ftof"
+   > FASTMCMODE: Activate FASTMC Mode. Possible values: 
+
+       0: No FASTMC (default).
+       1: Disable secondaries, disable hit processes.
+       2: Disable all physics but transportation, disable hit process.
+       10: Disable secondaries, hit processes are enabled.
+       20: Disable all physics but transportation, hit processes are enabled.
+
+   > FILTER_NULL_VARIABLES: If set to 1, filters out variables with no valuable info in the output.
+   > INTEGRATEDRAW: Activates integrated geant4 raw output for system(s). Example: -INTEGRATEDRAW="DC, TOF"
+   > OUTPUT: Type of output, output filename. Supported output: evio, txt. Example: -OUTPUT="evio, out.ev"
+   > SIGNALVT: Activates voltage (t) output for system(s). Example: -SIGNALVT="DC, TOF"
+   > TSAMPLING: Sampling time of electronics (typically FADC)
+   > VTRESOLUTION: Voltage versus time resolution, in ns
+
+

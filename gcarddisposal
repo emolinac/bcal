@@ -1,0 +1,19 @@
+	<option name="BEAM_P" value="e-,15*GeV,90*deg,180*deg"/>
+
+	<option name="BEAM_V" value="(5,0,0)cm"/>
+
+	
+	<option name="BEAM_P" value="e-,15*GeV,90*deg,180*deg"/>
+
+	<option name="BEAM_V" value="(5,0,0)cm"/>
+
+	<option name="N" value="10000"/>
+
+	
+	
+	
+	
+	<option name="COSMICRAYS" value="default,1,10"/>
+
+	<option name="COSMICAREA" value="0*cm, 0*cm, 0*cm, 5*cm"/>
+	

@@ -1,0 +1,23 @@
+<gcard>
+	<detector name="bcal" factory="TEXT" variation="original"/>
+
+	<option name="INTEGRATEDRAW" value="flux"/>
+
+	<option name="SAVE_ALL_MOTHERS" value="1"/>
+
+	<option name="OUTPUT" value="txt, output_optical_7.txt"/>
+
+	<option name="BEAM_P" value="mu+,10*GeV,-90*deg,-90*deg"/>
+
+	<option name="BEAM_V" value="(0,5,0)cm"/>
+	
+	<option name="PHYSICS" value="STD + Optical + HP + QGSP_BERT"/>
+
+	<option name="SPREAD_P" value="0*GeV,3*deg,3*deg"/>
+
+	<option name="RECORD_OPTICALPHOTONS" value="1"/>
+
+	<option name="RECORD_PASSBY" value="1"/>
+
+</gcard>
+
