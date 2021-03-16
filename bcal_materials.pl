@@ -4,7 +4,7 @@ use warnings;
 our %configuration;
 
 sub materials
-{	
+{
 	# Scintillator
 	my %mat = init_mat();
 	$mat{"name"}          			= "core";
@@ -12,7 +12,7 @@ sub materials
 	$mat{"density"}       			= "1.05";
 	$mat{"ncomponents"}   			= "2";
 	$mat{"components"}    			= "C 9 H 9";
-	$mat{"photonEnergy"}  			= "0.187*eV 0.224*eV 0.236*eV 0.28*eV 0.311*eV 0.33*eV 0.4*eV 0.45*eV";
+	$mat{"photonEnergy"}            = "0.187*eV 0.224*eV 0.236*eV 0.28*eV 0.311*eV 0.33*eV 0.4*eV 10.45*eV";
 	$mat{"indexOfRefraction"} 		= "1.572 1.576 1.577 1.582 1.587 1.592 1.606 1.617";
 	$mat{"reflectivity"} 			= "0.001 0.001 0.001 0.001 0.001 0.001 0.001";
 	$mat{"efficiency"}				= "0.3 0.3 0.3 0.3 0.3 0.3 0.3 0.3";#TEST VALUE
@@ -23,7 +23,7 @@ sub materials
 	$mat{"yieldratio"}				= "0.9";	#TEST VALUE
 	$mat{"scintillationyield"}		= "8000";   #TEST VALUE
 	print_mat(\%configuration, \%mat);
-	
+
 	my %mat2 = init_mat();
 	$mat2{"name"} 					= "inclad";
 	$mat2{"description"} 			= "Inner cladding of the Scintillator";
@@ -48,7 +48,7 @@ sub materials
 	$mat3{"indexOfRefraction"} 		= "1.42";
 	$mat3{"reflectivity"}			= "0.03";
 	$mat3{"absorptionLenght"}		= "0.0002*cm";
-	$mat3{"slowtimeconstant"}		= "2.8*ns";	
+	$mat3{"slowtimeconstant"}		= "2.8*ns";
 	$mat3{"rayleigh"}               = "0.0002*cm";
 	print_mat(\%configuration, \%mat3);
 }
