@@ -5,7 +5,7 @@
 
 	<option name="SAVE_ALL_MOTHERS" value="1"/>
 
-	<option name="OUTPUT" value="txt, output_optical_7.txt"/>
+	<option name="OUTPUT" value="txt, ../out/output.txt"/>
 
 	<option name="BEAM_P" value="mu+,10*GeV,-90*deg,-90*deg"/>
 
