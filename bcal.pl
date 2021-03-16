@@ -21,8 +21,8 @@ if( scalar @ARGV != 1)
 # Loading configuration file and paramters
 our %configuration = load_configuration($ARGV[0]);
 
-require "./bcal_materials.pl"; # Materials definitions.
-require "./bcal_geometry.pl";  # Sensitive geometries.
+require "./src/bcal_materials.pl"; # Materials definitions.
+require "./src/bcal_geometry.pl";  # Sensitive geometries.
 
 my @allConfs = ("original");
 foreach my $conf ( @allConfs )

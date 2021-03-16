@@ -5,7 +5,7 @@ detector_name: bcal
 variation:     original
 
 # Factory can be MYQL or TEXT
-factory:       TEXT 
+factory:       TEXT
 
 # run ranges and variation will apply to geometry, materials and parameters
 rmin:       1
@@ -15,8 +15,7 @@ rmax:       100000
 dbhost: clasdb.jlab.org
 
 # Comments/Description
-comment:       This is the bcal simulation 
+comment:       This is the bcal simulation
 
 # Verbosity controls the perl script output
 verbosity: 0
-
