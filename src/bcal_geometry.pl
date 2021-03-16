@@ -3,7 +3,6 @@ use warnings;
 
 our %configuration;
 
-# NOTE: Código sólo funciona para perl en 64 bits.
 # Los volúmenes de las fibras se dividen en a y b para poder hacer el shift de posición cada fila
 # por medio y quede una geometría simétrica.
 
