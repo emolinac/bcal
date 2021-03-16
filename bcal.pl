@@ -1,6 +1,5 @@
 #!/usr/bin/perl -w
 
-
 use strict;
 use lib ("$ENV{GEMC}/api/perl");
 use utils;
@@ -22,25 +21,13 @@ if( scalar @ARGV != 1)
 # Loading configuration file and paramters
 our %configuration = load_configuration($ARGV[0]);
 
-# material definitions
-require "./bcal_materials.pl";
+require "./bcal_materials.pl"; # Materials definitions.
+require "./bcal_geometry.pl";  # Sensitive geometries.
 
-# sensitive geometry
-require "./bcal_geometry.pl";
-
-
-# all the scripts must be run for every configuration
 my @allConfs = ("original");
-
 foreach my $conf ( @allConfs )
 {
 	$configuration{"variation"} = $conf ;
-	
-	# materials
 	materials();
-	
-	# geometry
-	makebcal();	
+	makebcal();
 }
-
-
