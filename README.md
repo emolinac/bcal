@@ -25,6 +25,3 @@ It calls all the other scripts for the whole simulation execution.
 detector
 * `bcal_materials.pl`: contains all the custom materials definitions.
 * `bcal.gcard`: can be defined as an "initial input" script.
-
-## License
-PENDING.
