@@ -10,10 +10,18 @@
 	<option name="N" value="10000"/>
 
 	
-	
-	
+	-------------------COSMIC RAYS OPTIONS------------------------
 	
 	<option name="COSMICRAYS" value="default,1,10"/>
+	default : default set of parameters (a,b,c)
+	1,10 : range of energy in GeV
+	cosmic rays in this config are positive and negative muons
+	
+	<option name="COSMICRAYS" value="default,1,10,muon||neutron"/>
+	The fourth entry -"muon||neutron"- adds neutrons to the muons
+
+	NOT SURE ABOUT THIS (TEST)
+	<option name="COSMICRAYS" value="default,1,10,muon+"/> or <option name="COSMICRAYS" value="default,1,10,mu+"/>
 
 	<option name="COSMICAREA" value="0*cm, 0*cm, 0*cm, 5*cm"/>
 	
